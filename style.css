@@ -1,126 +1,136 @@
+:root {
+  --main-red: #ff2023;
+  --main-blue: #344a72;
+  --main-white: #fff;
+  --main-black: #333;
+  --main-green: #49c1a2;
+  --main-green-hover: #37a08e;
+  --main-gray-dark: #666;
+  --main-gray-light: #ddd;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  
+
   body {
     font-family: 'Raleway', sans-serif;
-    background: #344a72;
-    color: #fff;
+    background: var(--main-blue);
+    color: var(--main-white);
     line-height: 1.8;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   #container {
     display: block;
     margin: 30px auto;
     max-width: 400px;
     padding: 20px;
   }
-  
+
   .form-wrap {
-    background: #fff;
+    background: var(--main-white);
     padding: 15px 25px;
-    color: #333;
+    color: var(--main-black);
   }
-  
+
   .form-wrap h1,
   .form-wrap p {
     text-align: center;
   }
-  
+
   .form-wrap .form-group {
     margin-top: 15px;
   }
-  
+
   .form-wrap .form-group label {
     display: block;
-    color: #666;
+    color: var(--main-gray-dark);
   }
-  
+
   .form-wrap .form-group input {
     width: 100%;
     padding: 10px;
-    border: #ddd 1px solid;
+    border: var(--main-gray-light) 1px solid;
     border-radius: 5px;
   }
-  
+
   .form-wrap button {
     display: block;
     width: 100%;
     padding: 10px;
     margin-top: 20px;
-    background: #49c1a2;
-    color: #fff;
+    background: var(--main-green);
+    color: var(--main-white);
     cursor: pointer;
   }
-  
+
   .form-wrap button:hover {
-    color: #37a08e;
+    color: var(--main-green-hover);
   }
-  
+
   .form-wrap .bottom-text {
     font-size: 13px;
     margin-top: 20px;
   }
-  
+
   footer {
     text-align: center;
     margin-top: 10px;
   }
-  
+
   footer a {
-    color: #49c1a2;
+    color: var(--main-green);
   }
-  
+
   .form-wrap #form #status {
-    color: #ff2023;
+    color: var(--main-red);
     text-align: center;
     margin-top: 5px;
   }
-  
+
   #name-invalid {
-    color: #ff2023;
+    color: var(--main-red);
   }
-  
+
   #error {
-    color: #ff2023;
+    color: var(--main-red);
     padding-top: 0.3rem;
     display: block;
     text-align: center;
     padding-top: 1rem;
   }
-  
+
   h1 {
     text-align: center;
     display: block;
     margin: 1rem auto;
     line-height: 1.5;
   }
-  
+
   #message {
     display: block;
     margin: 10rem auto;
     max-width: 400px;
     padding: 20px;
   }
-  
+
   #message .button {
     display: block;
     padding: 10px;
     margin-top: 20px;
-    background: #49c1a2;
-    color: #fff;
+    background: var(--main-green);
+    color: var(--main-white);
     cursor: pointer;
     text-align: center;
     font-size: 1.2rem;
   }
-  
+
   #message .button:hover {
-    color: #37a08e;
+    color: var(--main-green-hover);
   }
-  
